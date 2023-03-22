@@ -11,7 +11,8 @@ console.log(food);
 const story = "The quick brown fox jumps over the lazy dog"
 let count = (story.match(/the/g)||[]).length;
 console.log(count);
-let count2 = (story.match(/brown/g)||[]).length;
+let count2 = (story.match(/brown/g)).length;
+
 console.log(count2);
 //q4
 
@@ -28,5 +29,9 @@ console.log(convert);
 console.log(convert1);
 
 let d = "A wonderful world";
+
 d=d.split(" ").map(([firstChar,...rest])=>firstChar.toUpperCase()+rest.join("").toLowerCase()).join(" ");
 console.log(d);
+const string1 = "The pupils are reading in the library";
+let strings = (string1.match(/are/g));
+console.log(strings);
